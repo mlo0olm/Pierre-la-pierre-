@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pierre Clicker</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="source/1f5ff.png" type="image/x-icon">
+  <link rel="stylesheet" href="source/style.css">
+</head>
+<body>
+
+  <h1>Pierre la Pierre<br>Clicker</h1>
+
+  <button id="principale">
+    <span id="container">
+      <div class="wrapper">
+        <img src="source/skins/normal.png" alt="Pierre" id="pierre">
+      </div>
+    </span>
+    <br>Clique sur Pierre
+  </button>
+
+<div class="améloration">
+  <div class="score-wrapper">
+      <p id="score" class="info">Score : 0</p>
+  </div>
+  <button id="btnAmelioration" onclick="ouvrirPanneau('amelioration')">⏫️ Amélioration</button>
+  <button id="btnSauvegarde" onclick="ouvrirPanneau('sauvegarde')">💾 Sauvegarder / 📥 Charger</button>
+  <button id="btnSouvenir" onclick="ouvrirPanneau('souvenir')">✨ Souvenir</button>
+  <button id="btnSnkin" onclick="pas_fait()">👔 Skins</button>
+
+  <button id="btnToggleAdditional" class="additional-toggle-button">
+      <span id="toggleIcon">＋</span>
+  </button>
+
+  <div id="additionalButtons" class="additional-buttons-hidden">
+      <button id="btnParametre" onclick="ouvrirPanneau('paramètre')">⚙️ Paramètres</button>
+      <button id="btnCerdis" onclick="pas_fait()">🗿 Crédits</button>
+      <button id="btnFeedback" onclick="pas_fait()">💡 Feedback</button>
+      <button id="btnInfo" onclick="ouvrirPanneau('info')">ℹ️ Information</button>
+  </div>
+</div>
+
+  <div id="paneau">
+    <button id="closePaneau">✖️</button>
+    <div id="contenuPanneau"></div>
+</div>
+
+  <div id="animationViewer">
+    <div class="viewer-content">
+        <button id="closeViewer" class="viewer-close-button">✖</button>
+        <div id="viewerMediaContainer">
+            <p>Contenu de l'animation/mini-jeu</p>
+        </div>
+        <button id="viewerActionButton">Jouer le mini-jeu</button>
+        <button id="viewerSkipButton" class="skip-button">Passer l'animation</button>
+    </div>
+</div>
+
+  <script src="source/utils.js" defer></script>
+  <script src="source/gameLogic.js" defer></script>
+  <script src="source/main.js" defer></script>
+  <script src="source/ui.js" defer></script>
+
+  <audio id="sound1" src="source/son/Rocks, Crash & Debris, Medium Size, Rubble SND30254 S00.wav" preload="auto"></audio>
+  <audio id="sound2" src="source/son/Rocks, Crash & Debris, Medium Size, Rubble SND30254 S01.wav" preload="auto"></audio>
+  <audio id="sound3" src="source/son/Rocks, Crash & Debris, Medium Size, Rubble SND30254 S02.wav" preload="auto"></audio>
+  <audio id="sound4" src="source/son/Rocks, Crash & Debris, Medium Size, Rubble SND30254 S03.wav" preload="auto"></audio>
+  <audio id="sound5" src="source/son/Rocks, Crash & Debris, Medium Size, Rubble SND30254 S04.wav" preload="auto"></audio>
+  <audio id="sound6" src="source/son/Rocks, Crash & Debris, Medium Size, Rubble SND30254 S05.wav" preload="auto"></audio>
+  <audio id="sound7" src="source/son/Rocks, Crash & Debris, Medium Size, Rubble SND30254 S06.wav" preload="auto"></audio>
+
+</body>
+</html>
